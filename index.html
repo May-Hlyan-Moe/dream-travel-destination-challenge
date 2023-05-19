@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about London</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://kit.fontawesome.com/aad74cd859.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Paytone+One&family=Reem+Kufi+Fun&family=Rubik+Mono+One&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+          font-family: 'Reem Kufi Fun', sans-serif;
+            background-color: #DAF5FF;
+        }
+        /* Container holding the image and the text */
+        #heading {
+        position: relative;
+        text-align: right;
+        }
+
+        .image-for-h1 {
+            filter: drop-shadow(20px 20px 10px #FDF7C3);
+            border-radius: 10px;
+            width:800px;
+        }
+
+        /* Centered text */
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        }
+
+        .navbar-brand {
+          font-family: 'Rubik Mono One', sans-serif;
+        }
+
+        .offcanvas-title{
+          font-family: 'Rubik Mono One', sans-serif;
+        }
+
+        .nav-link{
+        font-family: 'Ubuntu Mono', monospace;
+        }
+
+        .navbar {
+          background-color: transparent !important;
+        }
+
+        .card {
+          display: block;
+          margin: 0 auto;
+        }
+
+        h1 {
+          font-family: 'Rubik Mono One', sans-serif;
+            
+            padding: 10px 25px;
+            font-size: 70px;
+            border-radius: 20px;
+            
+            color: #8DCBE6;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        #app {
+          font-size: 100px;
+        }
+
+        h2 {
+          font-family: 'Bebas Neue', sans-serif;
+            background-color: #ADA2FF;
+            color: aliceblue;
+            padding: 10px 100px;
+            text-align: center;
+        }
+
+        h3 {
+          text-align: center;
+          padding: 20px;
+        }
+
+        h5 {
+          font-family: 'Paytone One', sans-serif;
+        }
+
+        iframe {
+          display: block;
+          margin: 0 auto;
+        }
+
+        card-img-top{
+          width: 100px;
+        }
+
+        .description-for-shopping {
+          padding: 20px;
+          background-color: #D5EEFF;
+          color: #000000;
+          opacity: 0.7;
+          border-radius: 10px;
+        }
+
+        .footer{
+          font-family: 'Ubuntu Mono', monospace;
+          text-align: right;
+        }
+
+        .register {
+          margin: 0px 0px 10px 270px;
+          padding: 5px 10px;
+        }
+
+        .food {
+          color: #367E18;
+        }
+
+        @media (max-width: 800px) {
+            h1 {
+              font-size: 40px;
+            }
+
+            #app {
+              font-size: 50px;
+            }
+
+            .image-for-h1 {
+                width: 500px;
+            }
+
+            
+        }
+
+        @media (max-width: 500px) {
+          h1 {
+              font-size: 40px;
+            }
+
+            #app {
+              font-size: 60px;
+            }
+
+            .image-for-h1 {
+                width: 400px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <i class="fa-solid fa-plane-departure"></i>traveler.io
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LONDON</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#places">Places</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#food">Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#shopping">Shopping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#guide">Guide</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+ 
+
+
+    <br /><br /><br /><br />
+
+    <span id="home"></span>
+      
+    <div class="container" id="heading" >
+        <img src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="lONDON CITY"  class="image-for-h1">
+        
+        <div class="centered">
+            <h1> A VISIT TO
+              <div id="app">
+
+              </div>
+            </h1>
+            
+        </div>
+    </div>
+
+    <br /><br />
+
+    <h2>Why London???</h2>
+    <div class="container">
+      <p>
+          Have you ever think of visiting a place which was declared as the best city in the world with a thousand of specials ?
+          <br />
+          <h4>  Here are 7 top reasons to visit London </h4>
+          <ul>
+            <li>
+              Incredible views of London from the Shard
+            </li>
+            <li>
+              The “Changing of the Guard” at Buckingham Palace
+            </li>
+            <li>
+              The famous pub culture
+            </li>
+            <li>
+              Shop till you drop, and then shop a bit more
+            </li>
+            <li>
+              Enjoy culture and history in one of the museums
+            </li>
+            <Li>
+              Wander around and relax in one of the Royal Parks
+            </Li>
+            <li>
+              A great starting point to see other places in the UK
+            </li>
+          </ul>
+          
+          <a href="https://www.travelanddestinations.com/top-reasons-to-visit-london/">Read more</a>
+          
+
+      </p>
+    </div>
+
+    <span id="places"></span>
+
+    <h2>Popular Attractive places</h2>
+
+    <div class="container">
+      <h3>palace and castle</h3>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://guidelinestobritain.com/wp-content/uploads/2018/07/Buckingham-Palace_The-front-fac%CC%A7ade-the-East-Front-originally-constructed-by-Edward-Blore-and-completed-in-1850.jpg" class="card-img-top" alt="Buckingham Palace">
+          <div class="card-body">
+            <h5 class="card-title">Buckingham Palace</h5>
+            <p class="card-text"><small class="text-body-secondary">A cultural landmark</small></p>
+            <p class="card-text">Buckingham Palace is recognised around the world as the home of the monarch, the focus of national and royal celebrations, as well as the backdrop to the regular Changing the Guard ceremony.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1409343158/photo/tower-of-london-in-autumn-uk.jpg?b=1&s=170667a&w=0&k=20&c=fFrj-nSGKITSWOHUhE9jJXqVMfCPlYiSzhJ10uU2zH8=" class="card-img-top" alt="The Tower of London">
+          <div class="card-body">
+            <h5 class="card-title">The Tower of London</h5>
+            <p class="card-text"><small class="text-body-secondary">Castle</small></p>
+            <p class="card-text">The Tower of London is an internationally famous monument and one of England's most iconic structures .</p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <h3>museums</h3>
+      
+      
+        <div class="card-group">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1574515529318-b3a2cd51242e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" class="card-img-top" alt="British Museum">
+            <div class="card-body">
+              <h5 class="card-title">British Museum</h5>
+              <p class="card-text"><small class="text-body-secondary">Museum</small></p>
+              <p class="card-text">The British Museum is a public museum dedicated to human history, art and culture located in the Bloomsbury area of ​​London.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://www.civitatis.com/f/reino-unido/londres/guia/victoria-and-albert-museum-m.jpg" class="card-img-top" alt="Victoria and Albert Museum">
+            <div class="card-body">
+              <h5 class="card-title">Victoria and Albert Museum</h5>
+              <p class="card-text"><small class="text-body-secondary">Museum</small></p>
+              <p class="card-text">The Victoria and Albert Museum in London is the world's largest museum of applied arts, decorative arts and design, housing a permanent collection of over 2.27 million objects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card-group">
+            <div class="card">
+              <img src="https://media.istockphoto.com/id/475433278/photo/the-national-gallery-in-trafalgar-square-london.jpg?b=1&s=612x612&w=0&k=20&c=Z1JHA0U2H92MA5NYXRi7Yj9nu-EKwFcfdxD6SkBTM3I=" class="card-img-top" alt="The National Gallery">
+              <div class="card-body">
+                <h5 class="card-title">The National Gallery</h5>
+                <p class="card-text"><small class="text-body-secondary">Art Museum</small></p>
+                <p class="card-text">The National Gallery of Art serves the nation by welcoming all people to explore and experience art, creativity, and our shared humanity.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1584652868574-0669f4292976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="Natural History Museum">
+              <div class="card-body">
+                <h5 class="card-title">Natural History Museum</h5>
+                <p class="card-text"><small class="text-body-secondary">Museum</small></p>
+                <p class="card-text">A natural history museum or museum of natural history is a scientific institution with natural history collections that include current and historical records of animals, plants, fungi, ecosystems, geology, paleontology, climatology, and more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>parks</h3>
+
+        <div class="card-group">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/464420220/photo/saint-james-park-and-palace-london.jpg?b=1&s=170667a&w=0&k=20&c=PPqmtGDPr6i2S37ls6__FTUxAF3MIlUTAvKHmKMEbjg=" class="card-img-top" alt="St James's Park">
+            <div class="card-body">
+              <h5 class="card-title">St James's Park</h5>
+              <p class="card-text"><small class="text-body-secondary">Park</small></p>
+              <p class="card-text">St James's Park is the oldest Royal Park at the heart of ceremonial London. Enjoy great views of the lake and fountain from St James's Café and more.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/513389848/photo/high-view-to-hyde-park-sydney-at-night.jpg?b=1&s=170667a&w=0&k=20&c=b2seYB5NnM9qIYVRuBlOMigW1sEFJls1vVGpGIQ7Rg0=" class="card-img-top" alt="Hyde Park">
+            <div class="card-body">
+              <h5 class="card-title">Hyde Park</h5>
+              <p class="card-text"><small class="text-body-secondary">Park</small></p>
+              <p class="card-text">Hyde Park, a large Grade l-listed park is the largest of the Royal Parks in Westminster, Greater London.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>landmarks</h3>
+
+        <div class="card-group">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/133880482/photo/tower-bridge.jpg?s=612x612&w=0&k=20&c=2h4IP6Dg4cMx9WJ5TO6AwOemdm9R3BFOjXgmg4MdIwY=" class="card-img-top" alt="Tower Bridge">
+            <div class="card-body">
+              <h5 class="card-title">Tower Bridge</h5>
+              <p class="card-text"><small class="text-body-secondary">The bridge</small></p>
+              <p class="card-text">Tower Bridge is a Grade I listed combined bascule and suspension bridge in London, built between 1886 and 1894.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/1796715/pexels-photo-1796715.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="The London Eye">
+            <div class="card-body">
+              <h5 class="card-title">The London Eye</h5>
+              <p class="card-text"><small class="text-body-secondary">A place of interest to tourists</small></p>
+              <p class="card-text">The London Eye is the world's largest cantilevered observation wheel . </p>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/326807/pexels-photo-326807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Bibin clock shelf">
+              <div class="card-body">
+                <h5 class="card-title">Bibin clock shelf</h5>
+                <p class="card-text"><small class="text-body-secondary">A cultural landmark</small></p>
+                <p class="card-text">Big Ben, tower clock, famous for its accuracy and for its massive bell.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://media.istockphoto.com/id/1477185419/photo/trafalgar-square-london.jpg?s=612x612&w=0&k=20&c=J0whbORUZlXtfBg0JmloKSpNa5Wb882FxZ38_pXQOL4=" class="card-img-top" alt="Trafalgar Square">
+              <div class="card-body">
+                <h5 class="card-title">Trafalgar Square</h5>
+                <p class="card-text"><small class="text-body-secondary">Plaza</small></p>
+                <p class="card-text">Trafalgar Square is a public square in the City of Westminster, Central London, established in the early 19th century around the area formerly known as Charing Cross. </p>
+              </div>
+            </div>
+          </div>
+
+          
+          <h3>churches</h3>
+
+            <div class="card-group">
+              <div class="card">
+                <img src="https://media.istockphoto.com/id/857091298/photo/westminster-abbey.jpg?b=1&s=170667a&w=0&k=20&c=FnaLdo2xD52d4WCHM70ifgP37m2wmdjRLjRLc19o7zY=" class="card-img-top" alt="Westminster Abby">
+                <div class="card-body">
+                  <h5 class="card-title">Westminster Abby</h5>
+                  <p class="card-text"><small class="text-body-secondary">Anglican Christian Church</small></p>
+                  <p class="card-text">Westminster Abbey , formally titled the Collegiate Church of Saint Peter at Westminster, is an Anglican church in the City of Westminster, London, England.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://media.istockphoto.com/id/468903912/photo/london-cathedral-st-paiul-uk.jpg?b=1&s=170667a&w=0&k=20&c=eCHc5rd36VODzo4X3uw7ukbvwsX4KrZfzJGIG16xCQ8=" class="card-img-top" alt="St. Paul's Cathedral">
+                <div class="card-body">
+                  <h5 class="card-title">St. Paul's Cathedral</h5>
+                  <p class="card-text"><small class="text-body-secondary">Christian church</small></p>
+                  <p class="card-text">St Paul's Cathedral is an Anglican cathedral in London, England, and is the seat of the Bishop of London. </p>
+                </div>
+              </div>
+            </div>
+        
+    </div>
+    </div>
+    <br/>
+
+    <span id="food"></span>
+
+    <h2>Foods</h2>
+
+    <div class="container">
+      <div class="card-group">
+        <div class="card text-bg-light">
+          <img src="https://assets2.devourtours.com/wp-content/uploads/ajeet-panesar-_Tci2omfmHI-unsplash-1536x1025.jpg" class="card-img" alt="Full English Breakfast ">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Full English Breakfast </h5>
+          </div>
+        </div>
+        <div class="card text-bg-light">
+          <img src="https://media.istockphoto.com/id/1390328217/photo/homemade-british-bangers-and-mash.jpg?s=612x612&w=0&k=20&c=BoGnIw8QoSAvF2jOnnfYXPvW_C_mqTgfb8bi7lVzpQQ=" class="card-img" alt="Bangers and Mash">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Bangers and Mash</h5>
+          </div>
+        </div>
+        <div class="card text-bg-light">
+          <img src="https://assets2.devourtours.com/wp-content/uploads/sebastian-coman-photography-efNvQRK-QBg-unsplash-scotch-egg-1.jpg" class="card-img" alt="Scotch Egg">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Scotch Egg</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card text-bg-light">
+          <img src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/0c79d049-d843-4f4c-90e9-b7854af33172/best-pie-and-mash-london.jpg" class="card-img" alt="Pie and Mash">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Pie and Mash</h5>
+          </div>
+        </div>
+        <div class="card text-bg-light">
+          <img src="https://media.istockphoto.com/id/1426922502/photo/fish-and-chips.jpg?b=1&s=170667a&w=0&k=20&c=KY7tpU8yLHFWmJLGHba4rNCQ5NiH82D_ZJWDgckYGm8=" class="card-img" alt="Fish and Chips">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Fish and Chips</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card text-bg-light">
+          <img src="https://media.istockphoto.com/id/1166681454/photo/spaghetti-with-bolognese-sauce-and-parmesan-cheese.jpg?s=612x612&w=0&k=20&c=GPj2Aab-nvTbDQFM6iJIDfm59omhbQJ7aj-HHJqf_rU=" class="card-img" alt="Spaghetti Bolognese">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Spaghetti Bolognese</h5>
+          </div>
+        </div>
+        <div class="card text-bg-light">
+          <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioqSz43uAdMY/v1/-1x-1.jpg" class="card-img" alt="Chicken Tikka Masala">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Chicken Tikka Masala</h5>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card text-bg-light">
+          <img src="https://assets2.devourtours.com/wp-content/uploads/sebastian-coman-photography-afternoon-tea-unsplash.jpg" class="card-img" alt="Afternoon Tea ">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Afternoon Tea </h5>
+          </div>
+        </div>
+        <div class="card text-bg-light">
+          <img src="https://secretldn.com/wp-content/uploads/2020/01/shutterstock_1091500754-2.jpg" class="card-img" alt="Roast Dinner">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Roast Dinner</h5>
+          </div>
+        </div>
+        <div class="card text-bg-light">
+          <img src="https://media.istockphoto.com/id/1294051717/photo/a-white-plate-of-delicious-sticky-toffee-pudding-chocolate-cake-with-cream-and-chocolate.jpg?s=612x612&w=0&k=20&c=9T9vBq1j79A-z3FrGV-fPiOHiwZiaWIvVKSmh50DAeI=" class="card-img" alt="Sticky Toffee Pudding ">
+          <div class="card-img-overlay">
+            <h5 class="card-title food">Sticky Toffee Pudding </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <span id="shopping"></span>
+
+    <h2>shopping</h2>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Oxford Street and the West End</h5>
+              <p class="card-text">Oxford Street is considered the centre of London’s shopping world, London's shopping street.
+              </p>
+            </div>
+            <img src="https://freetoursbyfoot.com/wp-content/uploads/2023/01/Screenshot-2023-01-21-at-10.39.23-768x515.png" class="card-img-top" alt="Oxford Street and the West End">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Bond Street</h5>
+              <p class="card-text">
+                Bond Street is all about luxury! This is where to go, Burberry, Louis Vuitton, Tiffany & Co, Michael Koors, Valentino…the list goes on.
+              </p>
+            </div>
+            <img src="https://freetoursbyfoot.com/wp-content/uploads/2020/11/1200px-New_Bond_Street_London_25-10-2015.jpg" class="card-img-top" alt="Bond Street">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Piccadilly Circus</h5>
+              <p class="card-text">Piccadilly Circus is famous the world over for its vibrant, flashing lights and the Shaftesbury Memorial Fountain .</p>
+            </div>
+            <img src="https://media.istockphoto.com/id/525568423/photo/london-piccadilly-during-night.jpg?b=1&s=170667a&w=0&k=20&c=1hNDkz_5QIhpGxknxitA2Kogu1AdaJtODY-aBUz21GI=" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Regent Street</h5>
+              <p class="card-text">With huge sweeping vistas and different decorations throughout the year (including impressive Christmas displays), Regent Street is a picturesque place to spend your pennies.</p>
+            </div>
+            <img src="https://media.istockphoto.com/id/1320660621/photo/famous-regent-street-in-london.jpg?b=1&s=170667a&w=0&k=20&c=VtLW4dpYC7oJ8DuRXXWhYxG37MSkUjw7zemnvqQuLCU=" class="card-img-top" alt="Regent Street">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Covent Garden</h5>
+              <p class="card-text">Market stalls with handmade goods and crafts as well as cheap clothing and souvenirs, Covent Garden’s Market provides a true London market shopping experience.</p>
+            </div>
+            <img src="https://media.istockphoto.com/id/695625272/photo/covent-garden.jpg?s=612x612&w=0&k=20&c=fM57Ny8o8Ct11xtuTVPpqtXZrsG5TXlYyzfa_q9C-Go=" class="card-img-top" alt="Covent Garden">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Carnaby Street</h5>
+              <p class="card-text">Carnaby Street was the heart of swinging London in the 1960s and still offers quirky and glam shops, international brands, and unique one-of-a-kinds.
+              </p>
+            </div>
+            <img src="https://media.istockphoto.com/id/804702120/photo/shops-and-restaurants-in-carnaby-street-london.jpg?b=1&s=170667a&w=0&k=20&c=edzQVergkeu6fShL_Vk4IcDWpGG2y4n_Y8TYTj040tE=" class="card-img-top" alt="Carnaby Street">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Marylebone Village</h5>
+              <p class="card-text">Located near Baker Street, Marylebone is primarily residential but Marylebone High Street is jam-packed with trendy cafes, unique restaurants, and plenty of shops.</p>
+            </div>
+            <img src="https://freetoursbyfoot.com/wp-content/uploads/2023/01/Screenshot-2023-01-21-at-11.47.21-1536x1030.png" class="card-img-top" alt="Marylebone Village">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <span id="guide"></span>
+
+    <h2>Guide</h2>
+    
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/7vqfjBZ9864" title="London Travel Guide for 2023 - All You Need To Know" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br />
+
+    <h2>Book a trip</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z4YCc4YCU4YC64YCS4YCU4YC64YCZ4YC84YCt4YCv4YC3LCDhgJrhgLDhgJThgK3hgK_hgIDhgLrhgJDhgIDhgLrhgIDhgIThgLrhgLjhgJLhgJnhgLrhgLg!5e0!3m2!1smy!2sus!4v1684407630307!5m2!1smy!2sus" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+          <br />
+          <h6>
+            Want to visit London with tourist guides ? <br /> Let's us help you .
+          </h6> <br />
+          <form id="form">
+            <label>Your name:</label>
+             <input type="text" id="username" required ><br /> <br />
+             <label>Your email:</label>
+             <input type="email" id="email" required ><br /> <br />
+             <input type="submit" value="Register" onclick="sayHello()" class="register" >
+          </form>
+          <div class="footer">
+            <i class="fa-solid fa-plane-departure"></i>
+            traveler.io <br/>
+            follow us on :
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <br />
+            <i class="fa-regular fa-envelope"></i> : traveler@gmail.com
+            <br />
+            <i class="fa-solid fa-laptop-code"></i> by 
+            <a href="https://vocal-sprite-ab24fc.netlify.app/">May Hlyan Moe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script>
+
+      /*var app = document.getElementById('app');
+
+      var typewriter = new Typewriter(app, {
+          strings: ['May Hlyan Moe'],
+          autoStart: true,
+          loop: true,
+          cursor: '|',
+          delay: 100,
+          wrapperClassName: 'typeText',
+          cursorClassName: 'typeCursor',
+      });  
+      */
+
+      var app = document.getElementById('app');
+
+      var typewriter = new Typewriter (app, {
+        strings: ['LONDON'],
+        autoStart: true,
+        loop: true,
+        cursor: '|',
+        delay: 100,
+        wrapperClassName: 'typeText',
+        cursorClassName: 'typeCursor',
+      });
+
+      //submit
+      var form = document.querySelector('form')
+
+      form.addEventListener('submit', function(event){
+        event.preventDefault();
+
+        var username = document.getElementById('username').value;
+        console.log(username);
+
+        var email = document.getElementById('email').value;
+        console.log(email);
+      })
+
+      //sayHello
+
+      function sayHello () {
+        alert ("Thanks for your interest. We'll contact you for your trip to London 🇬🇧. Have a nice day 💕!");
+      }
+
+    </script>
+
+    
+</body>
+</html>
